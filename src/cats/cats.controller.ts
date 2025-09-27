@@ -14,14 +14,13 @@ export class CatsController {
   }
 
   @Get()
-
   async findAll(
     @Query('age') age: number,
     @Query('name') name: string,
     @Query('breed') breed: string,
   ): Promise<String> {
     // return this.catsService.findAll();
-    return `This action return all cats filtered by age: ${age}, name: ${name}, breed: ${breed}`;  
+    return `this action return all cats filtered by age: ${age}, name: ${name}, breed: ${breed}`;  
   }
 // ==> ex: /cats?age=3&name=Tom&breed=Tabby
 
